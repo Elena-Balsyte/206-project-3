@@ -1,0 +1,763 @@
+/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/**************************BASE Styles**********************/
+
+
+html {
+  width: 100%;
+}
+
+body {
+  color: #2b2b2b;
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 100%;
+  margin: 0;
+}
+
+section, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #fb0102;
+}
+
+div.content-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 90%;
+  flex-flow: row wrap;
+  padding: 2em 0;
+}
+
+h2 {
+  font-size: 2em;
+  color: darkred;
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 100%;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: darkred;
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  font-family: 'Lora', serif;
+}
+
+/***************MOBILE STYLES**********************/
+
+/***************HEADER STYLES**********************/
+
+header {
+  background-color: #5b5d5e;
+  background: url('../img/michal-kubalczyk-WecngmAT-KY-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 350px;
+  border-top: 2px solid #fb0102;
+  border-bottom: 2px solid #fb0102;
+  display: flex;
+  justify-content: center;
+}
+
+header div.content-wrapper {
+  justify-content: center;
+}
+
+header nav {
+  display: flex;
+  align-items: flex-start;
+  font-size: 1em;
+  font-weight: bold;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+ul li a {
+  color: #fb0102;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 0.5em;
+}
+
+
+/********************ABOUT section styles******************/
+
+section#about {
+  background-color: #5b5d5e;
+}
+
+#about p {
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*******************WORK section styles*******************/
+section#work {
+  background-color: rgba(138, 139, 141, 0.2);
+}
+
+#work div.content-wrapper {
+  justify-content: center;
+  align-items: center;
+}
+
+div.article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  text-align: center;
+  border-radius: 7px;
+  box-shadow: 3px 7px 3px 7px rgba(0, 0, 0, 0.19);
+  margin: 3em;
+  padding: 0 0.5em;
+}
+
+#work i {
+  font-size: 5em;
+  color: #fff;
+  background-color: #fb0102;
+  margin: 16px 0;
+  padding: 0.25em;
+  border-radius: 90px;
+}
+
+#attitude {
+  background: url('../img/kimberly-farmer-lUaaKCUANVI-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#attitude div.content-wrapper {
+  justify-content: flex-end;
+}
+
+#attitude div.paragraph {
+  width: 60%;
+  justify-content: flex-start;
+  font-weight: bolder;
+  text-align: right;
+}
+
+#attitude p {
+  color: #eee;
+}
+
+/***************FOOTER styles*****************/
+
+footer {
+  background-color: #1f2f3c;
+  color: #fff;
+}
+
+div.mail, div.social {
+  width: 100%;
+  margin-bottom: 2.5em;
+}
+
+footer h3 {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: lightblue;
+  font-size: 1.25em;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  margin-bottom: 3em;
+}
+
+i {
+  font-size: 2em;
+  color: #fb0102;
+  margin: 8px;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for tablets */
+header {
+  min-height: 400px;
+}
+
+#about div.content-wrapper {
+  justify-content: space-between;
+}
+
+#about div.paragraph {
+  width: 45%;
+}
+
+div.article {
+  width: 55%;
+}
+
+#attitude div.paragraph {
+  width: 50%;
+}
+
+footer {
+  background: url('../img/pawel-czerwinski--0xCCPIbl3M-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Style adjustments for desktop */
+header {
+  min-height: 500px;
+}
+
+header nav ul {
+  justify-content: flex-end;
+}
+
+nav ul li {
+  margin: 0 32px;
+}
+
+#work div.content-wrapper {
+  justify-content: center;
+  align-items: flex-start;
+}
+#work div.article {
+  width: 27%;
+  margin: 24px;
+  min-height: 700px;
+  justify-content: flex-start;
+}
+
+p {
+  font-size: 1.25em;
+}
+}
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+
+
+
+/****************************** BASE STYLES *******************************
+body {
+    width: 100%;
+    color: #2b2b2b;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+#about, #work {
+    height: 700px;
+}
+
+
+/******************************* GRID **************************
+
+
+.full-width {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+
+.half-width {
+  float: right;
+  width: 600px;
+}
+
+
+.third-width {
+  float: left;
+  width: 400px;
+}
+
+
+/********************************* HEADER **************************
+
+
+header {
+    background: url('../img/michal-kubalczyk-WecngmAT-KY-unsplash.jpg');
+    background-size: cover;
+    height: 800px;
+}
+
+
+nav {
+    float: left;
+    padding-top: 75px;
+}
+
+
+nav ul li{
+    display: inline-block;
+}
+
+
+nav ul li a {
+    color: #fb0102;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 80px;
+
+}
+
+
+header h2 {
+    clear: both;
+    color: #9b9b9b;
+    font-family: 'Lora', serif;
+    font-size: 72px;
+    line-height: 80px;
+    padding: 20px 0 20px 25px;
+    width: 1000px;
+}
+
+
+header h2 span {
+    color: #2b2b2b;
+}
+
+
+/************************** ABOUT *****************************
+#about {
+  background-color: #5b5d5e;
+  color: #fff;
+}
+
+#about .full-width {
+  padding: 80px 0;
+}
+
+
+#about h2 {
+  color: darkred;
+  font-family: 'Lora', serif;
+  font-size: 36px;
+  padding-left: 40px;
+}
+
+
+#about p {
+  color: #fff;
+  font-size: 21px;
+  line-height: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+/************************ WORK **********************************
+
+#attitude {
+  padding: 80px 0;
+  height: 700px;
+  background: url('../img/kimberly-farmer-lUaaKCUANVI-unsplash.jpg');
+  background-size: cover;
+  clear:both;
+}
+
+#attitude .half-width {
+  float:right;
+}
+
+#attitude h2 {
+  color: darkred;
+  font-family: 'Lora', serif;
+  font-size: 36px;
+  padding-left: 40px;
+}
+
+#attitude h3 {
+  padding-left: 40px;
+  font-size: 28px;
+}
+
+#attitude p {
+color: #fff;
+font-size: 21px;
+line-height: 40px;
+padding-left: 50px;
+padding-right: 50px;
+}
+
+#work {
+  background-color: rgba(138, 139, 141, 0.2);
+  text-align: center;
+  clear: both;
+}
+
+#work .full-width {
+    padding: 115px 0
+}
+
+#work img {
+    padding-bottom: 30px;
+}
+
+#work h3 {
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0 auto;
+  width: 190px;
+}
+
+#work p {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 50px;
+}
+
+/********************************** CONTACTS *******************************
+
+
+#contacts {
+/***  background-color: #213140; **//*
+  background: url('../img/pawel-czerwinski--0xCCPIbl3M-unsplash.jpg');
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+  color: #fff;
+  clear: both;
+}
+
+div #contact-info {
+  float: left;
+  margin-top: 225px;
+}
+
+#contacts h2, #contacts p, #contacts #email-header, #contacts #socialmedia-header, #contacts ul {
+  padding-left: 115px;
+}
+
+
+#contacts #envelope {
+  padding: 0 10px 0 115px;
+}
+
+
+#contacts h2 {
+    font-family: 'Lora' serif;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+
+#contacts p {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    margin: -30px 0 5px 0;
+}
+
+
+#contacts #socialmedia-header {
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 44px;
+    margin: 40px 0 0 0;
+}
+
+
+#contacts a {
+    color: #f90003;
+    font-weight: bold;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+
+#contacts ul {
+    list-style: none;
+}
+
+
+#contacts ul li {
+     display: inline-block;
+}
+
+
+#contacts ul img {
+    font-size: 32px;
+    padding-right: 48px;
+}
+*/
